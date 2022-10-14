@@ -7,6 +7,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -18,6 +19,16 @@ body {
 
   height: 100vh;
   width: 100vw;
+}
+
+#instructions .instructions-box h1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px auto 5px auto;
+  text-align: center;
+}
+#instructions .instructions-box {
+  margin-bottom: 20px;
 }
 
 #dice-game .dice-game-box {
