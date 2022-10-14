@@ -112,6 +112,7 @@ rollB.addEventListener("click", () => {
     rollB.classList.add("hidden");
     holdB.classList.add("hidden");
     newGameB.classList.remove("display-hide");
+    playerTurn = false;
   } else if (number === 1 && !playerTurn) {
     pToRoll.textContent = "PLAYER 2 HIT 1 & LOSE!";
     pToRoll.style.color = "red";
@@ -122,6 +123,7 @@ rollB.addEventListener("click", () => {
     rollB.classList.add("hidden");
     holdB.classList.add("hidden");
     newGameB.classList.remove("display-hide");
+    playerTurn = true;
   }
 
   // Check if either player is holding and the opponent gets a higher current score.
@@ -131,7 +133,7 @@ rollB.addEventListener("click", () => {
     pToRoll.textContent = "PLAYER 2 YOU WIN!";
 
     score2++;
-    score2.textContent = score2;
+    scoreP2.textContent = score2;
 
     rollB.classList.add("hidden");
     holdB.classList.add("hidden");
@@ -141,7 +143,7 @@ rollB.addEventListener("click", () => {
     pToRoll.textContent = "PLAYER 1 YOU WIN!";
 
     score1++;
-    score1.textContent = score1;
+    scoreP1.textContent = score1;
 
     rollB.classList.add("hidden");
     holdB.classList.add("hidden");
@@ -195,10 +197,12 @@ holdB.addEventListener("click", () => {
     playerTurn = false;
     hold1 = true;
     p1Text.textContent = "HOLDING";
+    pToRoll.textContent = "Player 2 to roll";
   } else {
     playerTurn = true;
     hold2 = true;
     p2Text.textContent = "HOLDING";
+    pToRoll.textContent = "Player 1 to roll";
   }
 });
 
