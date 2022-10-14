@@ -82,6 +82,10 @@ body {
   margin: 10px auto;
 }
 
+.display-hide {
+  display: none;
+}
+
 .hidden {
   visibility: hidden;
 }
