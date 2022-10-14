@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Game (2 Players)</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section id="dice-game">
+      <div class="dice-game-box">
+        <div class="box1">
+          <h2>Player 1</h2>
+          <h1 class="scoreP1">0</h1>
+          <h6>Current Score</h6>
+          <h5 class="CurScoreP1">0</h5>
+        </div>
+        <div class="box2">
+          <button class="newGameB">New Game</button>
+
+          <img class="dice1" src="imgs/dice1.png" />
+          <h2 class="hidden">Player 1 to roll</h2>
+
+          <button class="rollB hidden">Roll Dice</button>
+          <button class="holdB hidden">Hold</button>
+        </div>
+        <div class="box3">
+          <h2>Player 2</h2>
+          <h1 class="scoreP2">0</h1>
+          <h6>Current Score</h6>
+          <h5 class="CurScoreP2">0</h5>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>

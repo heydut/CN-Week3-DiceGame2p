@@ -4,3 +4,105 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(45deg, #eeeeee, #faf8f9, #ffffff);
+  font-family: "Poppins", sans-serif;
+
+  margin: 0px;
+  padding: 0px;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+#dice-game .dice-game-box {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#dice-game .dice-game-box h2,
+#dice-game .dice-game-box h6 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+#dice-game .dice-game-box h1,
+#dice-game .dice-game-box h5 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px auto 30px auto;
+}
+
+#dice-game .dice-game-box .box2 h2 {
+  margin: 20px;
+}
+
+#dice-game .dice-game-box button {
+  background-color: #f51166;
+  border: none;
+  border-radius: 50px;
+
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+
+  width: 150px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  transition: all 0.4s ease-in;
+}
+
+#dice-game .dice-game-box button:hover {
+  background-color: #fc9ec1;
+}
+
+#dice-game .dice-game-box .box1,
+#dice-game .dice-game-box .box3 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#dice-game .dice-game-box .box2 {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+}
+
+#dice-game .dice-game-box .box2 img {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+  #dice-game .dice-game-box h2,
+  #dice-game .dice-game-box h6 {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  #dice-game .dice-game-box h1,
+  #dice-game .dice-game-box h5 {
+    font-size: 18px;
+    margin: 10px auto 30px auto;
+  }
+
+  #dice-game .dice-game-box button {
+    font-size: 11px;
+    width: 100px;
+    margin: 5px auto;
+    padding: 5px 7.5px;
+  }
+}
